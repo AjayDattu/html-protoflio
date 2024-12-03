@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="content-fit">
+            <div class="logo">Honey Bee Guide</div>
+            <nav>
+                <ul>
+                    <li onclick="scrollToSection('intro')">Introduction</li>
+                    <li onclick="scrollToSection('description')">Specialties</li>
+                    <li onclick="scrollToSection('contact')">Contact</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="section" id="banner">
+        <div class="content-fit">
+            <div class="title" data-before="NATURE'S WORKERS">HONEY BEES</div>
+        </div>
+        <img src="img/flower.png" class="decorate" alt="" style="width: 50vw; bottom: 0; right: 0;">
+        <img src="img/leaf.png" class="decorate" alt="" style="width: 30vw; bottom: 0; left: 0;">
+    </div>
+
+    <div class="section" id="intro">
+        <div class="content-fit">
+            <div class="number">01</div>
+            <div class="des">
+                <div class="title">Introduction to Honey Bees</div>
+                <p>Honey bees are remarkable creatures known for their role in pollination and honey production. They
+                    live in well-organized colonies and contribute significantly to ecosystems worldwide. Each hive
+                    functions as a unit with distinct roles for the queen, workers, and drones.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="description">
+        <div class="content-fit">
+            <div class="number">02</div>
+            <div class="des">
+                <div class="title">Specialties of Honey Bees</div>
+                <p>Honey bees are unique for several reasons:</p>
+                <ul>
+                    <li><b>Hive Organization:</b> A hive consists of a single queen, thousands of worker bees, and a few
+                        drones.</li>
+                    <li><b>Pollination:</b> Honey bees are key pollinators, supporting agriculture and biodiversity.
+                    </li>
+                    <li><b>Honey Production:</b> Worker bees create honey as a food source for the colony during winter.
+                    </li>
+                    <li><b>Communication:</b> They perform a "waggle dance" to communicate the location of food sources.
+                    </li>
+                </ul>
+                <p>Their behavior is essential for maintaining ecological balance and food production.</p>
+            </div>
+        </div>
+        <img src="img/leaf1.png" class="decorate" alt="" style="width: 70vw; bottom: 0; right: 0; z-index: 101;">
+    </div>
+
+    <div class="section" id="contact">
+        <div class="content-fit">
+            <div class="number">03</div>
+            <div class="des">
+                <div class="title">Contact for More Information</div>
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td>honeybees@nature.com</td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>+123-456-7890</td>
+                    </tr>
+                    <tr>
+                        <td>Website</td>
+                        <td>www.honeybeeguide.com</td>
+                    </tr>
+                    <tr>
+                        <td>Social Media</td>
+                        <td>@honeybees_guide</td>
+                    </tr>
+                </table>
+                <div class="sign">Nature's Guardians</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Function to scroll to sections smoothly
+        function scrollToSection(id) {
+            const section = document.getElementById(id);
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+</body>
+
+
+<div id="container3D"></div>
+<script type="module" src="app.js"></script>
+</html>
